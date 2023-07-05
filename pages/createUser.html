@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/createUser.css">
+    <title>Farmacia Higia</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-3">
+        <div class="d-flex container container-css">
+            <div class="me-auto">
+                <a class="navbar-brand" href="#">Farmacia Higia</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 principal">
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="material-symbols-outlined">person</span>
+                        <a class="nav-link active" aria-current="page" href="#">Minha conta</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <a class="nav-link active" aria-current="page" href="#">Carrinho</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="material-symbols-outlined">shopping_basket</span>
+                        <a class="nav-link active" aria-current="page" href="#">Meus pedidos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-light" style="background: #ddd;">
+        <div class="container container-css">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Medicamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dermocosméticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfumaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Genéricos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nutrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promoções</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-create-user d-flex justify-content-center align-items-center">
+
+        <div class="row">
+
+
+
+            <div class="col">
+                <h1>Cadastre-se:</h1>
+                <div class="formulario">
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3 mt-3">
+                                    <label for="nome" class="form-label">Nome:</label>
+                                    <input type="text" class="form-control" id="nome" placeholder="Entre com seu nome"
+                                        name="nome">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 mt-3">
+                                    <label for="sobrenome" class="form-label">Sobrenome:</label>
+                                    <input type="text" class="form-control" id="sobrenome"
+                                        placeholder="Entre com seu sobrenome" name="sobrenome">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Entre com seu email"
+                                name="email">
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3 mt-3">
+                                    <label for="sobrenome" class="form-label">Endereço:</label>
+                                    <input type="text" class="form-control" id="sobrenome"
+                                        placeholder="Entre com seu sobrenome" name="sobrenome">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="mb-3 mt-3">
+                                    <label for="sobrenome" class="form-label">Número:</label>
+                                    <input type="number" class="form-control" id="sobrenome" placeholder=""
+                                        name="sobrenome">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Senha:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Entre com sua senha"
+                                name="pswd">
+                        </div>
+                        <div class="mb-4">
+                            <label class="">
+                                <a href="#">Esqueceu a senha?</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col">
+                <!-- <h1 class="">Não possui conta?</h1> -->
+                <div class="mt-4 p-5 bg-primary text-white rounded">
+
+                    <h2 class="mb-2">Benefícios</h2>
+                    <p>Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur atque quam
+                        dolorem nesciunt, eaque raas\dfasfzsadfasfasfsdzfasasfasfasfsafa sftione mollitia amet!</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

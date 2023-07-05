@@ -1,0 +1,80 @@
+@media (min-width: 768px) {
+    .principal {
+        padding: 0 5px 0 5px;;
+    }
+
+    .principal > li {
+        padding: 0 2px 0 2px;
+    }
+
+}
+
+nav > ul > li {
+    padding: 3em;
+}
+
+.card-height {
+  height: 100px;
+}
+
+.input-text {
+    margin-left: 20em;
+}
+
+.container-css {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.secao-remedios .carousel-inner,
+.secao-remedios .inner-css {
+    padding: 1em;
+  }
+  .secao-remedios .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+  }
+  .secao-remedios .carousel-control-prev,
+  .secao-remedios .carousel-control-next,
+  .secao-remedios .next-css,
+  .secao-remedios .prev-css {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .secao-remedios .carousel-item,
+    .secao-remedios .item-css {
+      margin-right: 0;
+      flex: 0 0 25%;
+      display: block;
+    }
+    .secao-remedios .carousel-inner,
+    .secao-remedios .inner-css {
+      display: flex;
+    }
+  }
+  .secao-remedios .card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .secao-remedios .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .secao-remedios .card .img-wrapper {
+      height: 17em;
+    }
+
+    .categorias-populares .row .colunas {
+      width: 50%;
+      padding: 8px;
+    }
+  }

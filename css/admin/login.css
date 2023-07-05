@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.h1-admin {
+    color: #4CAF50;
+}
+
+.login {
+    position: relative;
+    background: #E6F4EA;
+    width: 500px;
+    top: 20vh;
+    padding: 0 50px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.admin-painel {
+    position: relative;
+    top: -40px;
+    background-color: #8BC34A;
+    border-radius: 50%;
+    padding: 40px;
+    width: 150px;
+    height: 150px;
+}
+
+.ancora {
+    background-color: #8BC34A;
+    width: 100%;
+    transition: 375ms;
+    border: 2px solid #8BC34A;
+    text-decoration: none;
+}
+
+.ancora:hover{
+    background-color: transparent;
+    border: 2px solid #8BC34A;
+}
+
+.button-submit{
+    padding: 8px;
+}
+
+.button-submit:hover {
+    color: #8BC34A;
+}
+
+/* .ancora:hover {
+    color:#8BC34A;
+} */
+
+.link {
+    color: #8BC34A;
+}
+
+.link:hover {
+    color: #005100;
+}
+
+body {
+    background-color: #FFFFFF;
+}

@@ -1,0 +1,15 @@
+.div-remedio {
+    margin: 0;
+    font-size: 16.5%;
+    max-width: 250px;
+}
+
+.descricao-remedio {
+    font-size: 4em;
+}
+
+.center-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

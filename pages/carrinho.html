@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Higia</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/carrinho.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="mb-5">Carrinho de compras</h1>
+        <table class="text-center">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="w-25">
+                            <div class="row div-remedio d-flex justify-content-center align-items-center m-auto gap-1">
+                                <div class="col">
+                                    <img src="../img/dipirona.jpg" alt="remedio" srcset=""
+                                        style="width: 100px; height: 100px;">
+                                </div>
+                                <div class="col descricao-remedio">
+                                    <h6>Nome do produto</h6>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae ab reprehenderit
+                                        quidem natus</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="vertical-align: middle; width: 15%;">
+                            <input class="form-control w-50 m-auto text-center" type="number" name="txtQuantidade"
+                                id="quantidade" value="1" min="1">
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <h6>R$90,00</h6>
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <h6>R$90,00</h6>
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <a href="#" class="btn btn-danger">X</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">
+                            <div class="row div-remedio d-flex justify-content-center align-items-center m-auto gap-1">
+                                <div class="col">
+                                    <img src="../img/dipirona.jpg" alt="remedio" srcset=""
+                                        style="width: 100px; height: 100px;">
+                                </div>
+                                <div class="col descricao-remedio">
+                                    <h6>Nome do produto</h6>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae ab reprehenderit
+                                        quidem natus</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="vertical-align: middle; width: 15%;">
+                            <input class="form-control w-50 m-auto text-center" type="number" name="txtQuantidade"
+                                id="quantidade" value="1" min="1">
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <h6>R$90,00</h6>
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <h6>R$90,00</h6>
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <a href="#" class="btn btn-danger">X</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-25">
+                            <div class="row div-remedio d-flex justify-content-center align-items-center m-auto gap-1">
+                                <div class="col">
+                                    <img src="../img/dipirona.jpg" alt="remedio" srcset=""
+                                        style="width: 100px; height: 100px;">
+                                </div>
+                                <div class="col descricao-remedio">
+                                    <h6>Nome do produto</h6>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae ab reprehenderit
+                                        quidem natus</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td style="vertical-align: middle; width: 15%;">
+                            <input class="form-control w-50 m-auto text-center" type="number" name="txtQuantidade"
+                                id="quantidade" value="1" min="1">
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <h6>R$90,00</h6>
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <h6>R$90,00</h6>
+                        </td>
+                        <td style="vertical-align: middle;">
+                            <a href="#" class="btn btn-danger">X</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="frete ">
+                        <div class="d-flex align-items-center border">
+                            <div>
+                                <input class="form-control border-0" type="text" name="calcularFreteCEP" id="freteCEP"
+                                    placeholder="Ex: 29000-000">
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-success">Calcular frete</a>
+                            </div>
+                        </div>
+                        <div>
+                            .
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-danger w-100">Escolher mais produtos</a>
+                        </div>
+                    </div>
+                    <div class="preco">
+                        <div class="border p-4">
+                            <div class="total d-flex justify-content-between align-items-center p-2 bg-primary text-white rounded">
+                                <div>
+                                    <h6>Total:</h6>
+                                </div>
+                                <div>
+                                    <h6>R$90.00</h6>
+                                </div>
+                            </div>
+                            <div class="formas-pagamento mt-3">
+                                <h6 class="mb-3">Formas de pagamento:</h6>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                            value="option1" checked>Pix
+                                        <label class="form-check-label" for="radio1"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                            value="option2">Cartão de Crédito
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                            value="option2">Cartão de Débito
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                            value="option2">Boleto
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-success w-100">Finalizar compra</a>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>

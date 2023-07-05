@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/cartaoCredito.css">
+    <title>Farmacia Higia</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-3">
+        <div class="d-flex container container-css">
+            <div class="me-auto">
+                <a class="navbar-brand" href="#">Farmacia Higia</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 principal">
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="material-symbols-outlined">person</span>
+                        <a class="nav-link active" aria-current="page" href="#">Minha conta</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <a class="nav-link active" aria-current="page" href="#">Carrinho</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="material-symbols-outlined">shopping_basket</span>
+                        <a class="nav-link active" aria-current="page" href="#">Meus pedidos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-light" style="background: #ddd;">
+        <div class="container container-css">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Medicamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dermocosméticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfumaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Genéricos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nutrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promoções</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1 class="my-5">Carrinho de compras</h1>
+
+        <form action="#" class="mb-5">
+            <div class="mb-3 mt-3">
+                <label for="cartaoCredito" class="form-label">Selecionar bandeira do cartão:</label>
+                <div type="cartaoCredito" id="cartaoCredito" name="cartaoCredito"
+                    class="d-flex justify-content-evenly align-content-center p-2 border">
+                    <div>
+                        <a href="#" class="btn btn-success w-100">Visa</a>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-success w-100">MasterCard</a>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-success w-100">Elo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex gap-3">
+                <div class="mb-3 w-100">
+                    <label for="nomeTitular" class="form-label">Nome completo do titular:</label>
+                    <input type="text" class="form-control" id="nomeTitular" placeholder="Nome do titular" name="nomeTitular">
+                </div>
+                <div class="mb-3 w-100">
+                    <label for="cpfOrCNPJTitular" class="form-label">CPF ou CNPJ do cartão:</label>
+                    <input type="password" class="form-control" id="cpfOrCNPJTitular" placeholder="CPF ou CNPJ do titular" name="cpfOrCNPJTitular">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="numeroCartao" class="form-label">Número do cartão:</label>
+                <input type="number" class="form-control" id="numeroCartao" placeholder="Número do cartão de crédito"
+                    name="numeroCartao">
+            </div>
+
+            <div class="d-flex gap-5 mb-3">
+                <div>
+                    <label for="dataValidadeCartao" class="form-label">Validade do cartão:</label>
+                    <input type="date" class="form-control" id="dataValidadeCartao"
+                    name="dataValidadeCartao">
+                </div>                                                              
+                <div>
+                    <label for="numeroCartao" class="form-label">Código CVV:</label>
+                    <input type="number" class="form-control" id="numeroCartao" placeholder="Código CVV"
+                        name="numeroCartao">
+                </div>
+            </div>
+
+            <div class="d-flex gap-3 mb-3">
+                <div class="mb-3 w-100">
+                    <label for="parcelasCartao" class="form-label">Parcela do cartão:</label>
+                    <input type="text" class="form-control" id="parcelasCartao" name="parcelasCartao">
+                </div>
+                <div class="mb-3 w-100">
+                    <label for="pwd" class="form-label">Valor total:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+            </div>
+
+
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember">Salvar cartão protegido para próximas compras
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success">Confirmar compra</button>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
