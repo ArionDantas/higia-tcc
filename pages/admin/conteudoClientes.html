@@ -1,0 +1,206 @@
+<!-- Tela dos clientes -->
+<div class="main-clients">
+    <h3 class="my-4">Clientes</h3>
+
+    <!-- Div filtros de pesquisa -->
+    <div class="filtros-pesquisa shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+        <!-- Header do filtro -->
+        <div class="header-filter d-flex align-content-center">
+            <span class="material-symbols-outlined pe-2">
+                filter_alt
+            </span>
+            <h6>Filtros de pesquisa</h6>
+        </div>
+        <hr>
+        <!-- Input dos filtros -->
+        <div class="filters">
+            <form action="#">
+                <!-- Primeira linha dos filtros de pesquisa -->
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="inputMatriculaClientePesquisa"
+                                class="form-label">Matrícula</label>
+                            <input type="number" class="form-control" id="inputMatriculaClientePesquisa"
+                                placeholder="Pesquisar matrícula">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="inputStatusClientePesquisa" class="form-label">Status</label>
+                            <input type="text" class="form-control" id="inputStatusClientePesquisa"
+                                placeholder="Selecionar status">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="inputDataClientePesquisa" class="form-label">Data de
+                                geração</label>
+                            <input type="date" class="form-control" id="inputDataClientePesquisa">
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda linha dos filtros de pesquisa -->
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="inputNomeClientePesquisa" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="inputNomeClientePesquisa"
+                                placeholder="Pesquisar nome">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="inputEmailClientePesquisa" class="form-label">E-mail</label>
+                            <input type="text" class="form-control" id="inputEmailClientePesquisa"
+                                placeholder="Selecionar email">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="inputEnderecoClientePesquisa"
+                                class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="inputEnderecoClientePesquisa"
+                                placeholder="Selecionar endereço">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Div contendo os botões do formulário -->
+                <div class="buttons d-flex justify-content-end gap-1">
+                    <button type="button" class="btn btn-success d-flex align-content-center">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        Buscar
+                    </button>
+                    <button type="reset" id="buttomLimpar"
+                        class="btn btn-danger d-flex align-content-center">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                        Limpar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Div resultados da pesquisa -->
+    <div class="result-filters shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+        <!-- Header do resultado do filtro -->
+        <div class="header-filter d-flex align-content-center">
+            <span class="material-symbols-outlined pe-2">
+                bar_chart_4_bars
+            </span>
+            <h6>Filtros de pesquisa</h6>
+        </div>
+        <hr>
+        <!-- Div de pesquisa -->
+        <div class="div-pesquisa d-flex justify-content-end gap-2">
+            <div class="primeiro-form-pesquisa">
+                <form action="#" method="get" class="d-flex align-content-center">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar..."
+                        aria-label="Search">
+                    <button
+                        class="btn btn-outline-success d-flex align-content-center justify-content-center"
+                        type="submit"><span class="material-symbols-outlined">
+                            search
+                        </span></button>
+                </form>
+            </div>
+            <div class="segunda-div-pesquisa">
+                <button type="button" id="buttomNovoCliente"
+                    class="btn btn-primary d-flex align-content-center" data-bs-toggle="modal"
+                    data-bs-target="#modalCliente">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                    Novo
+                </button>
+                <!-- Div modal add -->
+                <div class="modal fade" id="modalCliente" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Adicionar
+                                    cliente</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form method="get">
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="inputNomeClienteCadastro"
+                                                    class="form-label">Nome</label>
+                                                <input type="text" class="form-control"
+                                                    id="inputNomeClienteCadastro">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="inputEmailClienteCadastro"
+                                                    class="form-label">Email</label>
+                                                <input type="email" class="form-control"
+                                                    id="inputEmailClienteCadastro">
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="mb-3">
+                                                <label for="inputCPFClienteCadastro"
+                                                    class="form-label">CPF</label>
+                                                <input type="text" class="form-control"
+                                                    id="inputCPFClienteCadastro">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="mb-3">
+                                                <label for="inputAniversarioClienteCadastro"
+                                                    class="form-label">Aniversário</label>
+                                                <input type="date" class="form-control"
+                                                    id="inputAniversarioClienteCadastro">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success">Cadastrar</button>
+
+                                    <button type="reset" class="btn btn-danger"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Div com a tabela do resultado da pesquisa -->
+        <div class="table-result">
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>ID Cliente</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>CPF</th>
+                        <th>Endereço</th>
+                        <th class="text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listagem-clientes">
+                    <!-- Linhas da tabela clientes -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
